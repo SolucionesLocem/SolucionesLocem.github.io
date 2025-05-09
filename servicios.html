@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios | Soluciones LOCEM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <link href="css/estilos.css" rel="stylesheet" />
+  <style>
+    .navbar {
+      background-color: #00153c;
+    }
+
+    .navbar-toggler {
+      border: 2px solid white;
+      padding: 8px 10px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      width: 2em;
+      height: 2em;
+    }
+
+    .navbar-toggler:hover {
+      background-color: #ffffff20;
+      border-color: #ffffff;
+    }
+    .service-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background-color: #f8f9fa;
+    }
+    .service-card:hover .detalles {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .detalles {
+      display: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="recursos/Logo1.webp" alt="Logo LOCEM" style="height: 30px;" />
+        Soluciones LOCEM
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="garantia.html">Garantía</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="animate__animated animate__fadeIn text-center">
+    <div class="container">
+      <h1 class="display-4">Nuestros Servicios</h1>
+      <p class="lead">Conoce todos los detalles de los servicios que ofrecemos para ti.</p>
+      <a href="contacto.html" class="btn btn-primary cta-btn-ylw mt-3">Solicita tu servicio ahora</a>
+    </div>
+  </header>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp">
+            <div class="card-body text-center">
+              <h5 class="card-title">Configuración de Cámaras de Seguridad por DVR</h5>
+              <p class="card-text">Solución ideal para quienes buscan seguridad básica y confiable en el hogar o negocio.</p>
+              <div class="detalles text-start mt-2">
+                <ul>
+                  <li>Monitoreo en vivo desde el celular (según modelo de DVR)</li>
+                  <li>Garantía de 30 días para tu tranquilidad (aplican restricciones, consulta nuestra <a href="garantia.html" class="text-primary">página de garantía</a>)</li>
+                  <li>Visualización remota las 24 horas (según modelo de DVR)</li>
+                </ul>
+                <p class="mt-3"><strong>Beneficios:</strong> Seguridad accesible para todos, mantenimiento mínimo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-body text-center">
+              <h5 class="card-title">Configuración de Cámaras de Seguridad por WiFi</h5>
+              <p class="card-text">Configuración rápida de cámaras WiFi para monitoreo remoto desde tu teléfono.</p>
+              <div class="detalles text-start mt-2">
+                <ul>
+                  <li>Acceso remoto a tus cámaras en cualquier momento y lugar</li>
+                  <li>Monitoreo claro, incluso en la oscuridad total (según modelo de cámara)</li>
+                  <li>Accede a tus grabaciones desde cualquier lugar con solo un clic (Requiere tarjeta de memoria)</li>
+                  <li>Garantía de 30 días para tu tranquilidad (aplican restricciones, consulta nuestra <a href="garantia.html" class="text-primary">página de garantía</a>)</li>
+                </ul>
+                <p class="mt-3"><strong>Beneficios:</strong> Tranquilidad garantizada con vigilancia constante y acceso instantáneo a tus cámaras.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-body text-center">
+              <h5 class="card-title">Formateo Básico de PC</h5>
+              <p class="card-text">Solución rápida para restaurar el sistema operativo y optimizar el rendimiento de tu equipo.</p>
+              <div class="detalles text-start mt-2">
+                <ul>
+                  <li>Eliminación de archivos innecesarios</li>
+                  <li>Instalación del sistema operativo</li>
+                  <li>Garantía de 30 días (aplican restricciones, consulta nuestra <a href="garantia.html" class="text-primary">página de garantía</a>)</li>
+                </ul>
+                <p class="mt-3"><strong>Beneficios:</strong> Tu PC estará limpia, rápida y lista para ser utilizada de nuevo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="card-body text-center">
+              <h5 class="card-title">Formateo Avanzado de PC</h5>
+              <p class="card-text">Formateo completo y configuración de programas a medida según tus necesidades.</p>
+              <div class="detalles text-start mt-2">
+                <ul>
+                  <li>Garantía de 30 días (aplican restricciones, consulta nuestra <a href="garantia.html" class="text-primary">página de garantía</a>)</li>
+                  <li>Instalación del sistema operativo, software adicional y antivirus a pedido</li>
+                  <li>Restauración de datos completos y configuraciones personalizadas</li>
+                </ul>
+                <p class="mt-3"><strong>Beneficios:</strong> Aumenta la velocidad de tu PC, instala programas personalizados y asegura un funcionamiento sin interrupciones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp animate__delay-4s">
+            <div class="card-body text-center">
+              <h5 class="card-title">Instalación de Office</h5>
+              <p class="card-text">Instalación completa de Microsoft Office según tus necesidades.</p>
+              <div class="detalles text-start mt-2">
+                <p class="mt-3"><strong>Beneficios:</strong> Configuración sencilla para comenzar a trabajar de manera eficiente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card service-card shadow animate__animated animate__fadeInUp animate__delay-5s">
+            <div class="card-body text-center">
+              <h5 class="card-title">...¡y más!</h5>
+              <p class="card-text">Puedes contactarnos para saber más.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Soluciones LOCEM. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
