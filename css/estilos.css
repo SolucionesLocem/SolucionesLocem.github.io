@@ -1,0 +1,236 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #00153c;
+  border-bottom: 2px solid #003366;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+.nav-link {
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffcc00 !important;
+  transform: scale(1.1);
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #00153c, #003366);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+header .animate__fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #00153c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/* Botones */
+button {
+  background-color: #00153c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+  background-color: #003366;
+}
+
+/* Íconos */
+.icono-servicio {
+  font-size: 3rem;
+  color: #00153c;
+  transition: transform 0.3s ease;
+}
+.icono-servicio:hover {
+  transform: rotate(360deg);
+}
+
+/* Sección de servicios con animación */
+.section-padding {
+  padding-bottom: 80px;
+}
+section.animate-slide {
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s;
+}
+section.animate-slide .row div {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+/* Animaciones */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal de imagen ampliada */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+section.text-center {
+  padding: 40px 20px;
+}
+section.text-center button {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+/* Animación de entrada de imágenes en el modal */
+@keyframes fadeInModal {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Estilo de la imagen dentro del modal */
+.modal-content img {
+  animation: fadeInModal 0.5s ease-in-out; /* Aplicar la animación */
+}
+
+/* Animación de entrada de las imágenes en la galería */
+.galeria-img {
+  opacity: 0; /* Comienza invisible */
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.5s; /* Añadir un retraso para que se animen una a una */
+}
+
+/* Animación de subida suave para las imágenes en la galería */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cta-btn {
+  background-color: #00153c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #003366;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.cta-btn-ylw {
+  background-color: #f5b800;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn-ylw:hover {
+  background-color: #d9a600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
